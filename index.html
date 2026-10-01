@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Associação Massona Esperança — Transformar vidas. Criar oportunidades. Construir esperança.">
+<title>Associação Massona Esperança | AME</title>
+<style>
+:root{--navy:#102a43;--blue:#1769aa;--gold:#c99a2e;--cream:#fffaf0;--light:#f5f7fa;--text:#243447;--white:#fff;--shadow:0 10px 30px rgba(16,42,67,.10)}
+*{box-sizing:border-box;margin:0;padding:0} html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.65;background:#fff}
+a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);border-bottom:1px solid #eee}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--navy)}
+.logo-mark{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,var(--gold),#e7c66e);display:grid;place-items:center;color:#fff;font-size:24px}
+.logo small{display:block;color:var(--gold);font-size:11px;letter-spacing:1.5px}
+nav{display:flex;gap:22px;align-items:center;font-size:14px;font-weight:600}
+nav a:hover{color:var(--gold)}.menu{display:none;border:0;background:none;font-size:28px}
+.btn{display:inline-block;padding:13px 21px;border-radius:8px;font-weight:700;border:2px solid transparent;transition:.2s}
+.btn-primary{background:var(--gold);color:#fff}.btn-primary:hover{background:#b78920;transform:translateY(-1px)}
+.btn-outline{border-color:var(--white);color:#fff}.btn-outline:hover{background:#fff;color:var(--navy)}
+.hero{background:linear-gradient(110deg,rgba(10,34,55,.94),rgba(23,105,170,.78)),url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1800&q=80') center/cover;min-height:690px;display:flex;align-items:center;color:#fff}
+.hero-content{max-width:760px;padding:90px 0}.eyebrow{color:#f0ce75;font-weight:800;letter-spacing:2px;font-size:13px;text-transform:uppercase;margin-bottom:15px}
+h1{font-size:clamp(42px,6vw,72px);line-height:1.05;margin-bottom:24px}
+.hero p{font-size:20px;max-width:720px;color:#edf5fb;margin-bottom:32px}.actions{display:flex;gap:14px;flex-wrap:wrap}
+section{padding:85px 0}.section-head{text-align:center;max-width:760px;margin:0 auto 45px}
+.section-head h2{font-size:clamp(30px,4vw,44px);line-height:1.15;color:var(--navy);margin-bottom:14px}
+.section-head p{color:#5f7182}.gold-line{width:60px;height:4px;background:var(--gold);margin:16px auto;border-radius:10px}
+.intro{background:var(--cream)}.intro-box{background:#fff;padding:42px;border-radius:18px;box-shadow:var(--shadow);text-align:center;font-size:21px;color:var(--navy);font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:#fff;border:1px solid #e7edf2;border-radius:16px;padding:28px;box-shadow:var(--shadow);transition:.2s}.card:hover{transform:translateY(-4px)}
+.icon{font-size:35px;margin-bottom:12px}.card h3{color:var(--navy);margin-bottom:8px}.card p{color:#607284}
+.feature{background:var(--light)}.project{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.project-img{min-height:430px;border-radius:22px;background:linear-gradient(120deg,rgba(16,42,67,.18),rgba(201,154,46,.25)),url('https://images.unsplash.com/photo-1509099836639-18ba02c6d0f9?auto=format&fit=crop&w=1200&q=80') center/cover}
+.project h2{font-size:42px;line-height:1.1;color:var(--navy);margin-bottom:15px}.project p{margin-bottom:18px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:30px}.stat{background:#fff;padding:24px 15px;border-radius:14px;text-align:center;box-shadow:var(--shadow)}.stat strong{display:block;font-size:32px;color:var(--gold)}.stat span{font-size:13px;color:#607284}
+.rose{background:linear-gradient(135deg,#fff2f6,#fff)}.rose .section-head h2{color:#9d3158}
+.cta{background:var(--navy);color:#fff;text-align:center}.cta h2{color:#fff;font-size:clamp(30px,4vw,46px);margin-bottom:15px}.cta p{max-width:720px;margin:0 auto 28px;color:#dbe7ef}
+.contact{background:var(--light)}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}.contact-card{background:#fff;border-radius:16px;padding:32px;box-shadow:var(--shadow)}.contact-card h3{color:var(--navy);margin-bottom:15px}.contact-list{list-style:none}.contact-list li{margin:10px 0}.contact-list a{color:var(--blue);font-weight:700}
+footer{background:#081c2d;color:#cbd8e2;padding:35px 0}.footer-grid{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}.footer-brand{color:#fff;font-weight:800}.footer-links{display:flex;gap:18px;flex-wrap:wrap;font-size:13px}.copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:25px;padding-top:20px;font-size:12px}
+.whatsapp{position:fixed;right:22px;bottom:22px;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:27px;box-shadow:0 8px 22px rgba(0,0,0,.2);z-index:60}
+@media(max-width:850px){nav{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;padding:18px 4%;flex-direction:column;align-items:flex-start;border-bottom:1px solid #eee}.menu{display:block}.grid{grid-template-columns:1fr 1fr}.project{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.contact-grid{grid-template-columns:1fr}}
+@media(max-width:560px){section{padding:60px 0}.grid{grid-template-columns:1fr}.hero{min-height:650px}.hero-content{padding:70px 0}.hero p{font-size:17px}.intro-box{padding:25px;font-size:18px}.project h2{font-size:34px}.stats{grid-template-columns:1fr 1fr}.logo-mark{width:42px;height:42px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="#inicio">
+      <div class="logo-mark">♥</div>
+      <div>MASSONA ESPERANÇA<small>ASSOCIAÇÃO • AME</small></div>
+    </a>
+    <button class="menu" aria-label="Abrir menu" onclick="toggleMenu()">☰</button>
+    <nav id="nav">
+      <a href="#sobre">Quem Somos</a>
+      <a href="#areas">Áreas</a>
+      <a href="#projecto">Projectos</a>
+      <a href="#parceiros">Parceiros</a>
+      <a href="#contactos">Contactos</a>
+      <a class="btn btn-primary" href="#apoiar">Apoiar</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="container hero-content">
+    <div class="eyebrow">Associação Massona Esperança</div>
+    <h1>Juntos podemos transformar necessidades em oportunidades.</h1>
+    <p>Trabalhamos com comunidades em situação de vulnerabilidade para promover educação, saúde, inclusão social, juventude e desenvolvimento económico sustentável.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#apoiar">Apoiar a nossa missão</a>
+      <a class="btn btn-outline" href="#projecto">Conhecer os projectos</a>
+    </div>
+  </div>
+</section>
+
+<section class="intro" id="sobre">
+  <div class="container">
+    <div class="section-head"><div class="eyebrow" style="color:var(--gold)">O que nos move</div><h2>A esperança começa com uma acção.</h2><div class="gold-line"></div></div>
+    <div class="intro-box">Não queremos apenas responder às necessidades de hoje. Queremos ajudar a construir oportunidades para amanhã.</div>
+  </div>
+</section>
+
+<section id="areas">
+  <div class="container">
+    <div class="section-head"><h2>As nossas áreas de actuação</h2><p>Intervenções centradas nas pessoas e nas necessidades reais das comunidades.</p><div class="gold-line"></div></div>
+    <div class="grid">
+      <article class="card"><div class="icon">🎒</div><h3>Educação</h3><p>Iniciativas que ajudam crianças e jovens a permanecer na escola e a desenvolver o seu potencial.</p></article>
+      <article class="card"><div class="icon">🌸</div><h3>Saúde</h3><p>Campanhas de sensibilização e actividades comunitárias de promoção da saúde e bem-estar.</p></article>
+      <article class="card"><div class="icon">👩🏾</div><h3>Mulheres e Raparigas</h3><p>Acções ligadas à higiene, saúde, educação, inclusão e empoderamento.</p></article>
+      <article class="card"><div class="icon">👨🏾‍🎓</div><h3>Juventude</h3><p>Capacitação, empreendedorismo, liderança e desenvolvimento profissional.</p></article>
+      <article class="card"><div class="icon">🌱</div><h3>Agricultura</h3><p>Produção, associativismo, formação e iniciativas de geração de rendimento.</p></article>
+      <article class="card"><div class="icon">🤝</div><h3>Desenvolvimento Comunitário</h3><p>Trabalhamos com as comunidades para identificar problemas e construir soluções sustentáveis.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="feature" id="projecto">
+  <div class="container project">
+    <div class="project-img" aria-label="Crianças em contexto escolar"></div>
+    <div>
+      <div class="eyebrow" style="color:var(--gold)">Projecto em destaque</div>
+      <h2>Meu Kit, Meu Uniforme</h2>
+      <p><strong>500 crianças. Uma oportunidade de continuar a estudar.</strong></p>
+      <p>O projecto pretende apoiar crianças de famílias em situação de vulnerabilidade com uniformes escolares e materiais essenciais. A AME já realizou a identificação das crianças beneficiárias e a recolha das medidas necessárias para a produção dos uniformes.</p>
+      <p>O apoio poderá incluir uniforme, calçado, material escolar, mochilas e outros materiais essenciais.</p>
+      <a class="btn btn-primary" href="#apoiar">Apoiar o projecto</a>
+    </div>
+  </div>
+</section>
+
+<section class="rose">
+  <div class="container">
+    <div class="section-head"><div class="eyebrow" style="color:#9d3158">Campanha</div><h2>Outubro Rosa</h2><p><strong>Cuidar. Informar. Prevenir.</strong></p><div class="gold-line"></div></div>
+    <div class="grid">
+      <article class="card"><div class="icon">🎗️</div><h3>Sensibilização</h3><p>Informação comunitária sobre saúde e prevenção.</p></article>
+      <article class="card"><div class="icon">👩🏾‍⚕️</div><h3>Mobilização</h3><p>Envolvimento de mulheres, jovens e líderes comunitários.</p></article>
+      <article class="card"><div class="icon">🩷</div><h3>Apoio às raparigas</h3><p>Distribuição de materiais de higiene feminina através de parcerias.</p></article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head"><h2>Crianças no centro da nossa missão</h2><p>Apoiamos iniciativas que procuram reduzir barreiras à educação, protecção social e desenvolvimento comunitário.</p><div class="gold-line"></div></div>
+    <div class="intro-box">Toda criança merece uma oportunidade para aprender, crescer e sonhar.</div>
+  </div>
+</section>
+
+<section class="feature">
+  <div class="container">
+    <div class="section-head"><h2>Juventude e oportunidades</h2><p>Queremos que os jovens sejam protagonistas do desenvolvimento das suas próprias comunidades.</p><div class="gold-line"></div></div>
+    <div class="grid">
+      <article class="card"><div class="icon">💼</div><h3>Empreendedorismo</h3><p>Apoio a pequenos negócios e desenvolvimento de ideias.</p></article>
+      <article class="card"><div class="icon">🛠️</div><h3>Formação profissional</h3><p>Competências práticas para ampliar oportunidades.</p></article>
+      <article class="card"><div class="icon">💡</div><h3>Tecnologia e liderança</h3><p>Ferramentas e competências para participação e inovação.</p></article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head"><h2>Desenvolvimento económico</h2><p>Da necessidade à oportunidade, valorizando os recursos e capacidades locais.</p><div class="gold-line"></div></div>
+    <div class="grid">
+      <article class="card"><h3>🌱 Agricultura</h3><p>Produção, formação e associativismo para fortalecer economias locais.</p></article>
+      <article class="card"><h3>💼 Empreendedorismo</h3><p>Promoção de pequenos negócios e iniciativas de geração de rendimento.</p></article>
+      <article class="card"><h3>⛏️ Mineração comunitária</h3><p>Capacitação, organização e promoção de alternativas económicas sustentáveis.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="parceiros">
+  <div class="container">
+    <h2>Nenhuma transformação sustentável é construída sozinha.</h2>
+    <p>Procuramos empresas, fundações, ONGs, organizações internacionais, instituições públicas, doadores, voluntários e parceiros técnicos.</p>
+    <div class="actions" style="justify-content:center">
+      <a class="btn btn-primary" href="https://wa.me/258878957621?text=Ol%C3%A1%20AME%2C%20tenho%20interesse%20em%20ser%20parceiro." target="_blank">Tornar-se parceiro</a>
+      <a class="btn btn-outline" href="#contactos">Falar connosco</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head"><h2>O nosso impacto</h2><p>Indicadores para acompanhar a dimensão e os resultados das nossas iniciativas.</p><div class="gold-line"></div></div>
+    <div class="stats">
+      <div class="stat"><strong>500</strong><span>Crianças na meta do Meu Kit, Meu Uniforme</span></div>
+      <div class="stat"><strong>1</strong><span>Missão de transformação comunitária</span></div>
+      <div class="stat"><strong>6</strong><span>Áreas prioritárias de intervenção</span></div>
+      <div class="stat"><strong>∞</strong><span>Possibilidades quando trabalhamos juntos</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="feature" id="apoiar">
+  <div class="container">
+    <div class="section-head"><h2>Faça parte da mudança</h2><p>Uma contribuição pode parecer pequena. O impacto pode ser enorme.</p><div class="gold-line"></div></div>
+    <div class="grid">
+      <article class="card"><div class="icon">💰</div><h3>Contribuição financeira</h3><p>Apoie directamente a implementação dos nossos projectos.</p></article>
+      <article class="card"><div class="icon">🎒</div><h3>Doação de materiais</h3><p>Uniformes, material escolar, produtos de higiene e equipamentos.</p></article>
+      <article class="card"><div class="icon">🤝</div><h3>Voluntariado e parceria</h3><p>Partilhe o seu tempo, conhecimento, recursos ou competências.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contactos">
+  <div class="container">
+    <div class="section-head"><h2>Vamos conversar</h2><p>Tem uma ideia? Quer apoiar um projecto? Estamos disponíveis para construir parcerias.</p><div class="gold-line"></div></div>
+    <div class="contact-grid">
+      <div class="contact-card"><h3>Associação Massona Esperança</h3><ul class="contact-list">
+        <li>📱 <strong>WhatsApp/Telefone:</strong> <a href="tel:+258878957621">87 895 7621</a></li>
+        <li>📧 <strong>E-mail:</strong> <span>[inserir e-mail oficial]</span></li>
+        <li>📍 <strong>Localização:</strong> Moçambique</li>
+      </ul></div>
+      <div class="contact-card"><h3>Fale directamente connosco</h3><p style="margin-bottom:18px">Envie uma mensagem pelo WhatsApp para conhecer os projectos, propor uma parceria ou saber como contribuir.</p><a class="btn btn-primary" href="https://wa.me/258878957621?text=Ol%C3%A1%20Associa%C3%A7%C3%A3o%20Massona%20Esperan%C3%A7a%2C%20gostaria%20de%20saber%20como%20posso%20apoiar." target="_blank">Abrir WhatsApp</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-brand">ASSOCIAÇÃO MASSONA ESPERANÇA</div><div>Transformar vidas. Criar oportunidades. Construir esperança.</div></div>
+      <div class="footer-links"><a href="#sobre">Sobre</a><a href="#projecto">Projectos</a><a href="#parceiros">Parceiros</a><a href="#contactos">Contactos</a></div>
+    </div>
+    <div class="copyright">© 2026 Associação Massona Esperança — Todos os direitos reservados.</div>
+  </div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/258878957621" target="_blank" aria-label="WhatsApp">☏</a>
+
+<script>
+function toggleMenu(){const n=document.getElementById('nav');n.style.display=n.style.display==='flex'?'none':'flex'}
+document.querySelectorAll('#nav a').forEach(a=>a.addEventListener('click',()=>{if(window.innerWidth<=850)document.getElementById('nav').style.display='none'}));
+</script>
+</body>
+</html>
